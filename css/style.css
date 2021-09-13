@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: inline;
+    align-items: center;
+    animation: animationL 5s;
+}
+
+@keyframes animationL {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: rotateY(-145deg);
+    }
+    75% {
+        transform: translateX(1100px) rotateX(-90deg) rotateY(-120deg);
+    }
+    100% {
+        transform: translateX(1000px) rotateX(0deg) rotateY(0deg);
+    }
+}
+
+
+.bola {
+    width: 40%;
+    margin: 50px 50px;
+    position: relative;
+    margin-left: -150px;
+    animation: animationB 5s;
+    background-color: none;
+}
+
+@keyframes animationB {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(1000px) rotate(1600deg);
+    }
+}
+
+.botao {
+    /* position: absolute; */
+    padding: 10px 10px;
+    color: purple;
+    margin: 50px 50px;
+    align-items: center;
+}
+
+button:hover {
+    background: green;
+    transition: all ease-out 1s;
+}
+
+.div-btn {
+    text-align: center;
+    margin: 50px 50px;
+    align-content: center;
+}
